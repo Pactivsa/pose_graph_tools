@@ -20,7 +20,9 @@ add_message_files(
   TimeRangeQuery.msg
   VLCFrameMsg.msg
   VLCFrames.msg
-  VLCRequests.msg)
+  VLCRequests.msg
+  UWBFrame.msg
+  )
 
 add_service_files(DIRECTORY srv FILES LcdFrameRegistration.srv
                   PoseGraphQuery.srv VLCFrameQuery.srv)

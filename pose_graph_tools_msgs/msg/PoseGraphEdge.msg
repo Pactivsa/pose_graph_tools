@@ -16,6 +16,7 @@ int32 REJECTED_LOOPCLOSE = 3
 int32 MESH = 4
 int32 POSE_MESH = 5
 int32 MESH_POSE = 6
+int32 UWB = 7
 
 # Transforms in ede
 geometry_msgs/Pose pose

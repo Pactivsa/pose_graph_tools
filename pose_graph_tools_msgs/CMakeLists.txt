@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(pose_graph_tools_msgs)
 
 find_package(catkin REQUIRED COMPONENTS message_generation std_msgs
-                                        geometry_msgs sensor_msgs)
+                                        geometry_msgs sensor_msgs nav_msgs)
 
 add_message_files(
   DIRECTORY
@@ -25,9 +25,9 @@ add_message_files(
   )
 
 add_service_files(DIRECTORY srv FILES LcdFrameRegistration.srv
-                  PoseGraphQuery.srv VLCFrameQuery.srv)
+                  PoseGraphQuery.srv VLCFrameQuery.srv RequestGlobalPose.srv)
 
-generate_messages(DEPENDENCIES std_msgs geometry_msgs sensor_msgs)
+generate_messages(DEPENDENCIES std_msgs geometry_msgs sensor_msgs nav_msgs)
 
 catkin_package(
   CATKIN_DEPENDS
@@ -35,6 +35,7 @@ catkin_package(
   std_msgs
   geometry_msgs
   sensor_msgs
+  nav_msgs
   DEPENDS
   INCLUDE_DIRS
   LIBRARIES)

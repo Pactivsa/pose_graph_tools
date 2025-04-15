@@ -1,4 +1,5 @@
 uint32 robot_id
 ---
-uint32[] pose_ids
+uint32[] submap_ids
+geometry_msgs/Pose[] T_submap_kfs
 nav_msgs/Path path

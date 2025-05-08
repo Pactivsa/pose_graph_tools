@@ -21,3 +21,11 @@ int32 UWB = 7
 # Transforms in ede
 geometry_msgs/Pose pose
 float64[36] covariance
+
+uint64 number_edge_dis
+
+time stamp_from
+time stamp_to
+geometry_msgs/Pose pose_kf
+geometry_msgs/Pose pose_dis
+float32[] distances
